@@ -1,11 +1,10 @@
-const Instruction = require("./instruction");
+const InitialPositions = require("./instruction");
 
-test("Initial position and direction is (0,0,0,N)",()=>{
-    const instruction = new Instruction(0,0,0,"N");
-
-    expect(instruction.x).toBe(0);
-    expect(instruction.y).toBe(0);
-    expect(instruction.z).toBe(0);
-    expect(instruction.direction).toBe("N");
-});
-
+test("Initial position and direction is (0,0,0,N)", () => {
+    const initials = new InitialPositions();
+  
+    expect(initials.x).toBe(0);
+    expect(initials.y).toBe(0);
+    expect(initials.z).toBe(0);
+    expect(initials.direction).toBe("N");
+  });
